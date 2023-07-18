@@ -66,7 +66,7 @@ while Gamemode3 != 0:
         Valid = "No"
         while Valid == "No":
             try:
-                Number = int(input("Enter the Number you want the Bot to guess (1 to 100.) : "))
+                Number = int(input("Enter the Number you want the Bot to guess (1 to 100) : "))
             except Exception:
                 print("Enter Numbers only.")
             if Number >= 1 and Number <= 100:
@@ -107,7 +107,7 @@ while Gamemode3 != 0:
         break
     elif Exit_Lower == "y":
         print("Select Gamemode Again.")
-        print("1 - You Guess the Number Bot Picks.\n2 - The Bot Guesses the Number You Pick.")
+        print("1 - You Guess the Number Bot Picks.\n2 - The Bot Guessed the Number You Pick.")
         Valid3 = "No"
         while Valid3 == "No":
             try:
