@@ -45,6 +45,6 @@ while i != x and tries > 0:
         print("Enter Number only.")
 
 if i == x:
-    print("Correct!!, The Number was "+ x+".")
+    print("Correct!!, The Number was "+ str(x)+".")
 elif tries <= 0:
     print("Out Of tries.")
