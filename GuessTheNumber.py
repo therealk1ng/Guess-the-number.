@@ -81,7 +81,7 @@ while Gamemode3 != 0:
             Bot_Move = random.randint(Min,Max)
             print("Is the Number "+ str(Bot_Move) +".")
             try:
-                Confirm = input("Type L for Lower, H for Higher or Y If It Is Correct : ")
+                Confirm = input("Type L for Lower, H for Higher or Y If It is Correct : ")
             except Exception:
                 print("Only Enter H, L or Y")
             Confirm_Lower = Confirm.lower()
