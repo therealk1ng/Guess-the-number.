@@ -72,7 +72,7 @@ while Gamemode3 != 0:
             if Number >= 1 and Number <= 100:
                 Valid = "Yes"
             else:
-                print("Number not Valid!! ")
+                print("Number Invalid! ")
 
         Confirm = ""
         Min = 1
@@ -93,10 +93,9 @@ while Gamemode3 != 0:
                 Min = Bot_Move
             elif Confirm == "y":
                 break
-        
         if Confirm == "y":
             print(f"The Bot took {attempts} tires to Guess the Number {Number}.")
-    print("Do you want to play again?")
+    print("Do you want to play again? ")
     print("Y for Yes, N for No")
     try:
         Exit = input(": ")
