@@ -77,6 +77,7 @@ while Gamemode3 != 0:
         Confirm = ""
         Min = 1
         Max = 100
+        attempts = 0
         while Confirm != "Y":
             Bot_Move = random.randint(Min,Max)
             print("Is the Number "+ str(Bot_Move) +".")
@@ -84,15 +85,17 @@ while Gamemode3 != 0:
                 Confirm = input("Type L for Lower, H for Higher or Y If It is Correct : ")
             except Exception:
                 print("Only Enter H, L or Y")
+            attempts += 1
             Confirm_Lower = Confirm.lower()
             if Confirm_Lower == "l":
                 Max = Bot_Move
             elif Confirm_Lower == "h":
                 Min = Bot_Move
             elif Confirm == "y":
-                print("Yay, the bot Guessed it!!")
                 break
-    
+        
+        if Confirm == "y":
+            print(f"The Bot took {attempts} tires to Guess the Number {Number}.")
     print("Do you want to play again?")
     print("Y for Yes, N for No")
     try:
