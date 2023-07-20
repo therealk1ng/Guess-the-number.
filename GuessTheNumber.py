@@ -81,12 +81,18 @@ while Gamemode3 != 0:
         while Confirm != "Y":
             Bot_Move = random.randint(Min,Max)
             print("Is the Number "+ str(Bot_Move) +".")
-            try:
-                Confirm = input("Type L for Lower, H for Higher or Y If It is Correct : ")
-            except Exception:
-                print("Only Enter H, L or Y")
+            Valid4 = "No"
+            while Valid4 == "No":
+                try:
+                    Confirm = input("Type L for Lower, H for Higher or Y If It is Correct : ")
+                except Exception:
+                    print("Only Enter H, L or Y")
+                Confirm_Lower = Confirm.lower()
+                if Confirm_Lower == "y" or Confirm_Lower == "l" or Confirm_Lower == "h":
+                    Valid4 = "Yes"
+                else:
+                    Valid4 = "No"
             attempts += 1
-            Confirm_Lower = Confirm.lower()
             if Confirm_Lower == "l":
                 Max = Bot_Move
             elif Confirm_Lower == "h":
