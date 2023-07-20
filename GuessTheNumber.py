@@ -98,7 +98,7 @@ while Gamemode3 != 0:
     print("Do you want to play again? ")
     print("Y for Yes, N for No")
     try:
-        Exit = input(": ")
+        Exit = input(":- ")
     except Exception:
         print("Enter Y or N ONLY.")
     Exit_Lower = Exit.lower()
